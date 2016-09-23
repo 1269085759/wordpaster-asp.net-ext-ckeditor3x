@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48C25C6A-E7C4-4EDC-8704-72D787E0A2CA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CKEditor353</RootNamespace>
+    <AssemblyName>CKEditor353</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asp.net\test.html" />
+    <Content Include="asp.net\upload.aspx" />
+    <Content Include="asp\test.asp" />
+    <Content Include="asp\upload.asp" />
+    <Content Include="asp\UpLoadClass.asp" />
+    <Content Include="ckeditor\adapters\jquery.js" />
+    <Content Include="ckeditor\ckeditor.js" />
+    <Content Include="ckeditor\config.js" />
+    <Content Include="ckeditor\contents.css" />
+    <Content Include="ckeditor\images\spacer.gif" />
+    <Content Include="ckeditor\lang\en.js" />
+    <Content Include="ckeditor\lang\zh-cn.js" />
+    <Content Include="ckeditor\lang\zh.js" />
+    <Content Include="ckeditor\lang\_languages.js" />
+    <Content Include="ckeditor\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="ckeditor\plugins\adobeair\plugin.js" />
+    <Content Include="ckeditor\plugins\ajax\plugin.js" />
+    <Content Include="ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="ckeditor\plugins\excelpaster\images\excel.gif" />
+    <Content Include="ckeditor\plugins\excelpaster\plugin.js" />
+    <Content Include="ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="ckeditor\plugins\imagepaster\images\paster.png" />
+    <Content Include="ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="ckeditor\plugins\netpaster\images\ico.png" />
+    <Content Include="ckeditor\plugins\netpaster\plugin.js" />
+    <Content Include="ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="ckeditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\en.js" />
+    <Content Include="ckeditor\plugins\placeholder\lang\he.js" />
+    <Content Include="ckeditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="ckeditor\plugins\placeholder\plugin.js" />
+    <Content Include="ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="ckeditor\plugins\specialchar\lang\en.js" />
+    <Content Include="ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="ckeditor\plugins\imagepaster\plugin.js" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="ckeditor\plugins\xml\plugin.js" />
+    <Content Include="ckeditor\skins\kama\dialog.css" />
+    <Content Include="ckeditor\skins\kama\editor.css" />
+    <Content Include="ckeditor\skins\kama\icons.png" />
+    <Content Include="ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="ckeditor\skins\kama\skin.js" />
+    <Content Include="ckeditor\skins\kama\templates.css" />
+    <Content Include="ckeditor\skins\office2003\dialog.css" />
+    <Content Include="ckeditor\skins\office2003\editor.css" />
+    <Content Include="ckeditor\skins\office2003\icons.png" />
+    <Content Include="ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\office2003\skin.js" />
+    <Content Include="ckeditor\skins\office2003\templates.css" />
+    <Content Include="ckeditor\skins\v2\dialog.css" />
+    <Content Include="ckeditor\skins\v2\editor.css" />
+    <Content Include="ckeditor\skins\v2\icons.png" />
+    <Content Include="ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="ckeditor\skins\v2\skin.js" />
+    <Content Include="ckeditor\skins\v2\templates.css" />
+    <Content Include="ckeditor\themes\default\theme.js" />
+    <Content Include="ext.html" />
+    <Content Include="extjs\adapter\ext\ext-base.js" />
+    <Content Include="extjs\ext-all.js" />
+    <Content Include="extjs\resources\charts.swf" />
+    <Content Include="extjs\resources\css\ext-all-notheme.css" />
+    <Content Include="extjs\resources\css\ext-all.css" />
+    <Content Include="extjs\resources\css\README.txt" />
+    <Content Include="extjs\resources\css\reset-min.css" />
+    <Content Include="extjs\resources\css\structure\borders.css" />
+    <Content Include="extjs\resources\css\structure\box.css" />
+    <Content Include="extjs\resources\css\structure\button.css" />
+    <Content Include="extjs\resources\css\structure\combo.css" />
+    <Content Include="extjs\resources\css\structure\core.css" />
+    <Content Include="extjs\resources\css\structure\date-picker.css" />
+    <Content Include="extjs\resources\css\structure\dd.css" />
+    <Content Include="extjs\resources\css\structure\debug.css" />
+    <Content Include="extjs\resources\css\structure\dialog.css" />
+    <Content Include="extjs\resources\css\structure\editor.css" />
+    <Content Include="extjs\resources\css\structure\form.css" />
+    <Content Include="extjs\resources\css\structure\grid.css" />
+    <Content Include="extjs\resources\css\structure\layout.css" />
+    <Content Include="extjs\resources\css\structure\list-view.css" />
+    <Content Include="extjs\resources\css\structure\menu.css" />
+    <Content Include="extjs\resources\css\structure\panel-reset.css" />
+    <Content Include="extjs\resources\css\structure\panel.css" />
+    <Content Include="extjs\resources\css\structure\progress.css" />
+    <Content Include="extjs\resources\css\structure\qtips.css" />
+    <Content Include="extjs\resources\css\structure\reset.css" />
+    <Content Include="extjs\resources\css\structure\resizable.css" />
+    <Content Include="extjs\resources\css\structure\slider.css" />
+    <Content Include="extjs\resources\css\structure\tabs.css" />
+    <Content Include="extjs\resources\css\structure\toolbar.css" />
+    <Content Include="extjs\resources\css\structure\tree.css" />
+    <Content Include="extjs\resources\css\structure\window.css" />
+    <Content Include="extjs\resources\css\visual\borders.css" />
+    <Content Include="extjs\resources\css\visual\box.css" />
+    <Content Include="extjs\resources\css\visual\button.css" />
+    <Content Include="extjs\resources\css\visual\combo.css" />
+    <Content Include="extjs\resources\css\visual\core.css" />
+    <Content Include="extjs\resources\css\visual\date-picker.css" />
+    <Content Include="extjs\resources\css\visual\dd.css" />
+    <Content Include="extjs\resources\css\visual\debug.css" />
+    <Content Include="extjs\resources\css\visual\dialog.css" />
+    <Content Include="extjs\resources\css\visual\editor.css" />
+    <Content Include="extjs\resources\css\visual\form.css" />
+    <Content Include="extjs\resources\css\visual\grid.css" />
+    <Content Include="extjs\resources\css\visual\layout.css" />
+    <Content Include="extjs\resources\css\visual\list-view.css" />
+    <Content Include="extjs\resources\css\visual\menu.css" />
+    <Content Include="extjs\resources\css\visual\panel.css" />
+    <Content Include="extjs\resources\css\visual\progress.css" />
+    <Content Include="extjs\resources\css\visual\qtips.css" />
+    <Content Include="extjs\resources\css\visual\resizable.css" />
+    <Content Include="extjs\resources\css\visual\slider.css" />
+    <Content Include="extjs\resources\css\visual\tabs.css" />
+    <Content Include="extjs\resources\css\visual\toolbar.css" />
+    <Content Include="extjs\resources\css\visual\tree.css" />
+    <Content Include="extjs\resources\css\visual\window.css" />
+    <Content Include="extjs\resources\css\xtheme-blue.css" />
+    <Content Include="extjs\resources\expressinstall.swf" />
+    <Content Include="extjs\resources\images\default\box\corners-blue.gif" />
+    <Content Include="extjs\resources\images\default\box\corners.gif" />
+    <Content Include="extjs\resources\images\default\box\l-blue.gif" />
+    <Content Include="extjs\resources\images\default\box\l.gif" />
+    <Content Include="extjs\resources\images\default\box\r-blue.gif" />
+    <Content Include="extjs\resources\images\default\box\r.gif" />
+    <Content Include="extjs\resources\images\default\box\tb-blue.gif" />
+    <Content Include="extjs\resources\images\default\box\tb.gif" />
+    <Content Include="extjs\resources\images\default\button\arrow.gif" />
+    <Content Include="extjs\resources\images\default\button\btn.gif" />
+    <Content Include="extjs\resources\images\default\button\group-cs.gif" />
+    <Content Include="extjs\resources\images\default\button\group-lr.gif" />
+    <Content Include="extjs\resources\images\default\button\group-tb.gif" />
+    <Content Include="extjs\resources\images\default\button\s-arrow-b-noline.gif" />
+    <Content Include="extjs\resources\images\default\button\s-arrow-b.gif" />
+    <Content Include="extjs\resources\images\default\button\s-arrow-bo.gif" />
+    <Content Include="extjs\resources\images\default\button\s-arrow-noline.gif" />
+    <Content Include="extjs\resources\images\default\button\s-arrow-o.gif" />
+    <Content Include="extjs\resources\images\default\button\s-arrow.gif" />
+    <Content Include="extjs\resources\images\default\dd\drop-add.gif" />
+    <Content Include="extjs\resources\images\default\dd\drop-no.gif" />
+    <Content Include="extjs\resources\images\default\dd\drop-yes.gif" />
+    <Content Include="extjs\resources\images\default\editor\tb-sprite.gif" />
+    <Content Include="extjs\resources\images\default\form\checkbox.gif" />
+    <Content Include="extjs\resources\images\default\form\clear-trigger.gif" />
+    <Content Include="extjs\resources\images\default\form\date-trigger.gif" />
+    <Content Include="extjs\resources\images\default\form\error-tip-corners.gif" />
+    <Content Include="extjs\resources\images\default\form\exclamation.gif" />
+    <Content Include="extjs\resources\images\default\form\radio.gif" />
+    <Content Include="extjs\resources\images\default\form\search-trigger.gif" />
+    <Content Include="extjs\resources\images\default\form\text-bg.gif" />
+    <Content Include="extjs\resources\images\default\form\trigger-tpl.gif" />
+    <Content Include="extjs\resources\images\default\form\trigger.gif" />
+    <Content Include="extjs\resources\images\default\gradient-bg.gif" />
+    <Content Include="extjs\resources\images\default\grid\arrow-left-white.gif" />
+    <Content Include="extjs\resources\images\default\grid\arrow-right-white.gif" />
+    <Content Include="extjs\resources\images\default\grid\col-move-bottom.gif" />
+    <Content Include="extjs\resources\images\default\grid\col-move-top.gif" />
+    <Content Include="extjs\resources\images\default\grid\columns.gif" />
+    <Content Include="extjs\resources\images\default\grid\dirty.gif" />
+    <Content Include="extjs\resources\images\default\grid\done.gif" />
+    <Content Include="extjs\resources\images\default\grid\drop-no.gif" />
+    <Content Include="extjs\resources\images\default\grid\drop-yes.gif" />
+    <Content Include="extjs\resources\images\default\grid\footer-bg.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid-blue-hd.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid-blue-split.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid-hrow.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid-loading.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid-split.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid-vista-hd.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid3-hrow.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="extjs\resources\images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="extjs\resources\images\default\grid\group-by.gif" />
+    <Content Include="extjs\resources\images\default\grid\group-collapse.gif" />
+    <Content Include="extjs\resources\images\default\grid\group-expand-sprite.gif" />
+    <Content Include="extjs\resources\images\default\grid\group-expand.gif" />
+    <Content Include="extjs\resources\images\default\grid\hd-pop.gif" />
+    <Content Include="extjs\resources\images\default\grid\hmenu-asc.gif" />
+    <Content Include="extjs\resources\images\default\grid\hmenu-desc.gif" />
+    <Content Include="extjs\resources\images\default\grid\hmenu-lock.gif" />
+    <Content Include="extjs\resources\images\default\grid\hmenu-lock.png" />
+    <Content Include="extjs\resources\images\default\grid\hmenu-unlock.gif" />
+    <Content Include="extjs\resources\images\default\grid\hmenu-unlock.png" />
+    <Content Include="extjs\resources\images\default\grid\invalid_line.gif" />
+    <Content Include="extjs\resources\images\default\grid\loading.gif" />
+    <Content Include="extjs\resources\images\default\grid\mso-hd.gif" />
+    <Content Include="extjs\resources\images\default\grid\nowait.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-first-disabled.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-first.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-last-disabled.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-last.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-next-disabled.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-next.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-prev-disabled.gif" />
+    <Content Include="extjs\resources\images\default\grid\page-prev.gif" />
+    <Content Include="extjs\resources\images\default\grid\pick-button.gif" />
+    <Content Include="extjs\resources\images\default\grid\refresh.gif" />
+    <Content Include="extjs\resources\images\default\grid\row-check-sprite.gif" />
+    <Content Include="extjs\resources\images\default\grid\row-expand-sprite.gif" />
+    <Content Include="extjs\resources\images\default\grid\row-over.gif" />
+    <Content Include="extjs\resources\images\default\grid\row-sel.gif" />
+    <Content Include="extjs\resources\images\default\grid\sort-hd.gif" />
+    <Content Include="extjs\resources\images\default\grid\sort_asc.gif" />
+    <Content Include="extjs\resources\images\default\grid\sort_desc.gif" />
+    <Content Include="extjs\resources\images\default\grid\wait.gif" />
+    <Content Include="extjs\resources\images\default\layout\collapse.gif" />
+    <Content Include="extjs\resources\images\default\layout\expand.gif" />
+    <Content Include="extjs\resources\images\default\layout\gradient-bg.gif" />
+    <Content Include="extjs\resources\images\default\layout\mini-bottom.gif" />
+    <Content Include="extjs\resources\images\default\layout\mini-left.gif" />
+    <Content Include="extjs\resources\images\default\layout\mini-right.gif" />
+    <Content Include="extjs\resources\images\default\layout\mini-top.gif" />
+    <Content Include="extjs\resources\images\default\layout\ns-collapse.gif" />
+    <Content Include="extjs\resources\images\default\layout\ns-expand.gif" />
+    <Content Include="extjs\resources\images\default\layout\panel-close.gif" />
+    <Content Include="extjs\resources\images\default\layout\panel-title-bg.gif" />
+    <Content Include="extjs\resources\images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="extjs\resources\images\default\layout\stick.gif" />
+    <Content Include="extjs\resources\images\default\layout\stuck.gif" />
+    <Content Include="extjs\resources\images\default\layout\tab-close-on.gif" />
+    <Content Include="extjs\resources\images\default\layout\tab-close.gif" />
+    <Content Include="extjs\resources\images\default\menu\checked.gif" />
+    <Content Include="extjs\resources\images\default\menu\group-checked.gif" />
+    <Content Include="extjs\resources\images\default\menu\item-over.gif" />
+    <Content Include="extjs\resources\images\default\menu\menu-parent.gif" />
+    <Content Include="extjs\resources\images\default\menu\menu.gif" />
+    <Content Include="extjs\resources\images\default\menu\unchecked.gif" />
+    <Content Include="extjs\resources\images\default\panel\corners-sprite.gif" />
+    <Content Include="extjs\resources\images\default\panel\left-right.gif" />
+    <Content Include="extjs\resources\images\default\panel\light-hd.gif" />
+    <Content Include="extjs\resources\images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="extjs\resources\images\default\panel\tool-sprites.gif" />
+    <Content Include="extjs\resources\images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="extjs\resources\images\default\panel\top-bottom.gif" />
+    <Content Include="extjs\resources\images\default\panel\top-bottom.png" />
+    <Content Include="extjs\resources\images\default\panel\white-corners-sprite.gif" />
+    <Content Include="extjs\resources\images\default\panel\white-left-right.gif" />
+    <Content Include="extjs\resources\images\default\panel\white-top-bottom.gif" />
+    <Content Include="extjs\resources\images\default\progress\progress-bg.gif" />
+    <Content Include="extjs\resources\images\default\qtip\bg.gif" />
+    <Content Include="extjs\resources\images\default\qtip\close.gif" />
+    <Content Include="extjs\resources\images\default\qtip\tip-anchor-sprite.gif" />
+    <Content Include="extjs\resources\images\default\qtip\tip-sprite.gif" />
+    <Content Include="extjs\resources\images\default\s.gif" />
+    <Content Include="extjs\resources\images\default\shadow-c.png" />
+    <Content Include="extjs\resources\images\default\shadow-lr.png" />
+    <Content Include="extjs\resources\images\default\shadow.png" />
+    <Content Include="extjs\resources\images\default\shared\blue-loading.gif" />
+    <Content Include="extjs\resources\images\default\shared\calendar.gif" />
+    <Content Include="extjs\resources\images\default\shared\glass-bg.gif" />
+    <Content Include="extjs\resources\images\default\shared\hd-sprite.gif" />
+    <Content Include="extjs\resources\images\default\shared\large-loading.gif" />
+    <Content Include="extjs\resources\images\default\shared\left-btn.gif" />
+    <Content Include="extjs\resources\images\default\shared\loading-balls.gif" />
+    <Content Include="extjs\resources\images\default\shared\right-btn.gif" />
+    <Content Include="extjs\resources\images\default\shared\warning.gif" />
+    <Content Include="extjs\resources\images\default\sizer\e-handle-dark.gif" />
+    <Content Include="extjs\resources\images\default\sizer\e-handle.gif" />
+    <Content Include="extjs\resources\images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="extjs\resources\images\default\sizer\ne-handle.gif" />
+    <Content Include="extjs\resources\images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="extjs\resources\images\default\sizer\nw-handle.gif" />
+    <Content Include="extjs\resources\images\default\sizer\s-handle-dark.gif" />
+    <Content Include="extjs\resources\images\default\sizer\s-handle.gif" />
+    <Content Include="extjs\resources\images\default\sizer\se-handle-dark.gif" />
+    <Content Include="extjs\resources\images\default\sizer\se-handle.gif" />
+    <Content Include="extjs\resources\images\default\sizer\square.gif" />
+    <Content Include="extjs\resources\images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="extjs\resources\images\default\sizer\sw-handle.gif" />
+    <Content Include="extjs\resources\images\default\slider\slider-bg.png" />
+    <Content Include="extjs\resources\images\default\slider\slider-thumb.png" />
+    <Content Include="extjs\resources\images\default\slider\slider-v-bg.png" />
+    <Content Include="extjs\resources\images\default\slider\slider-v-thumb.png" />
+    <Content Include="extjs\resources\images\default\tabs\scroll-left.gif" />
+    <Content Include="extjs\resources\images\default\tabs\scroll-right.gif" />
+    <Content Include="extjs\resources\images\default\tabs\scroller-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-close.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tab-strip-bg.png" />
+    <Content Include="extjs\resources\images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="extjs\resources\images\default\tabs\tabs-sprite.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\bg.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\btn-arrow.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\gray-bg.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\more.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\tb-bg.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="extjs\resources\images\default\toolbar\tb-xl-sep.gif" />
+    <Content Include="extjs\resources\images\default\tree\arrows.gif" />
+    <Content Include="extjs\resources\images\default\tree\drop-add.gif" />
+    <Content Include="extjs\resources\images\default\tree\drop-between.gif" />
+    <Content Include="extjs\resources\images\default\tree\drop-no.gif" />
+    <Content Include="extjs\resources\images\default\tree\drop-over.gif" />
+    <Content Include="extjs\resources\images\default\tree\drop-under.gif" />
+    <Content Include="extjs\resources\images\default\tree\drop-yes.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-end-minus.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-end-plus.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-end.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-line.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-minus.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow-plus.gif" />
+    <Content Include="extjs\resources\images\default\tree\elbow.gif" />
+    <Content Include="extjs\resources\images\default\tree\folder-open.gif" />
+    <Content Include="extjs\resources\images\default\tree\folder.gif" />
+    <Content Include="extjs\resources\images\default\tree\leaf.gif" />
+    <Content Include="extjs\resources\images\default\tree\loading.gif" />
+    <Content Include="extjs\resources\images\default\tree\s.gif" />
+    <Content Include="extjs\resources\images\default\window\icon-error.gif" />
+    <Content Include="extjs\resources\images\default\window\icon-info.gif" />
+    <Content Include="extjs\resources\images\default\window\icon-question.gif" />
+    <Content Include="extjs\resources\images\default\window\icon-warning.gif" />
+    <Content Include="extjs\resources\images\default\window\left-corners.png" />
+    <Content Include="extjs\resources\images\default\window\left-right.png" />
+    <Content Include="extjs\resources\images\default\window\right-corners.png" />
+    <Content Include="extjs\resources\images\default\window\top-bottom.png" />
+    <Content Include="index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+    <Content Include="WordPaster\error.png" />
+    <Content Include="WordPaster\jquery.min.js" />
+    <Content Include="WordPaster\json2.min.js" />
+    <Content Include="WordPaster\paster.png" />
+    <Content Include="WordPaster\setup\1.gif" />
+    <Content Include="WordPaster\setup\2.gif" />
+    <Content Include="WordPaster\setup\3.gif" />
+    <Content Include="WordPaster\setup\4.gif" />
+    <Content Include="WordPaster\setup\loading.gif" />
+    <Content Include="WordPaster\setup\setup.htm" />
+    <Content Include="WordPaster\upload.gif" />
+    <Content Include="WordPaster\WordPaster.css" />
+    <Content Include="WordPaster\WordPaster.js" />
+    <Content Include="副本 index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asp.net\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp.net\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="extjs\resources\images\default\form\clear-trigger.psd" />
+    <None Include="extjs\resources\images\default\form\date-trigger.psd" />
+    <None Include="extjs\resources\images\default\form\search-trigger.psd" />
+    <None Include="extjs\resources\images\default\form\trigger.psd" />
+    <None Include="extjs\resources\images\default\window\left-corners.psd" />
+    <None Include="extjs\resources\images\default\window\left-right.psd" />
+    <None Include="extjs\resources\images\default\window\right-corners.psd" />
+    <None Include="extjs\resources\images\default\window\top-bottom.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4415</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4416/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
