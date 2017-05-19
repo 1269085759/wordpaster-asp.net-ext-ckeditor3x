@@ -501,6 +501,9 @@
     <Content Include="WordPaster\setup\loading.gif" />
     <Content Include="WordPaster\setup\setup.htm" />
     <Content Include="WordPaster\upload.gif" />
+    <Content Include="WordPaster\w.app.js" />
+    <Content Include="WordPaster\w.edge.js" />
+    <Content Include="WordPaster\w.file.js" />
     <Content Include="WordPaster\WordPaster.css" />
     <Content Include="WordPaster\WordPaster.js" />
     <Content Include="副本 index.html" />
