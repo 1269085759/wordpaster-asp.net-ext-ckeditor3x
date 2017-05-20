@@ -9,18 +9,22 @@
     <script type="text/javascript" src="extjs/ext-all.js"></script>
     <script type="text/javascript" src="ckeditor/ckeditor.js" charset="utf-8"></script>
     <script type="text/javascript" src="WordPaster/jquery.min.js"></script>
+    <script type="text/javascript" src="WordPaster/w.edge.js" charset="utf-8"></script>
+    <script type="text/javascript" src="WordPaster/w.app.js" charset="utf-8"></script>
+    <script type="text/javascript" src="WordPaster/w.file.js" charset="utf-8"></script>
     <script type="text/javascript" src="WordPaster/WordPaster.js" charset="utf-8"></script>
 </head>
 <body>
 	<textarea id="editor1" name="editor1"></textarea>
 	<script type="text/jscript" language="javascript">
 		var win;
-		var pasterMgr = new PasterManager();
+		var pasterMgr = new WordPasterManager();
+		pasterMgr.Config["PostUrl"] = "http://localhost:4416/asp.net/upload.aspx";
 		pasterMgr.Load();
 
 		window.onload = function()
 		{
-			pasterMgr.Init(CKEDITOR.instances.editor1);
+		    pasterMgr.SetEditor(CKEDITOR.instances.editor1);
 		}
 
 		//加载CKEditor编辑器

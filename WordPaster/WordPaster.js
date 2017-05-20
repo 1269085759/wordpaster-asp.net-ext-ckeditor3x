@@ -167,10 +167,10 @@ function WordPasterManager()
         this.app.postMessage = this.app.postMessageEdge;
 	}
     this.setup_tip = function () {
-        this.ui.setup.skygqbox();
-        var dom = this.ui.setup.html("控件加载中，如果未加载成功请先<a name='w-exe'>安装控件</a>");
-        var lnk = dom.find('a[name="w-exe"]');
-        lnk.attr("href", this.Config["ExePath"]);
+        //this.ui.setup.skygqbox();
+        //var dom = this.ui.setup.html("控件加载中，如果未加载成功请先<a name='w-exe'>安装控件</a>");
+        //var lnk = dom.find('a[name="w-exe"]');
+        //lnk.attr("href", this.Config["ExePath"]);
     };
     this.need_update = function ()
     {
